@@ -1,0 +1,25 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.bg-banner {
+  background-image: url("/img/banner-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-texture {
+  background-image: url("/img/grid-img-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.scrolled {
+  background-color: black;
+}
