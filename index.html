@@ -19,10 +19,7 @@
   <body>
     <!-- header start -->
     <header class="h-screen bg-banner">
-      <nav
-        class="fixed top-0 z-20 w-full transition-colors duration-300"
-        id="navbar"
-      >
+      <nav class="fixed top-0 z-30 w-full" id="navbar">
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
@@ -134,8 +131,8 @@
               </h1>
             </div>
           </div>
-          <div class="flex gap-40 w-[400px] mb-10">
-            <div class="flex flex-col gap-10 text-2xl text-white">
+          <div class="flex gap-32 md:gap-40 w-[450px] md:w-[400px] mb-10">
+            <div class="flex md:flex-col gap-5 md:gap-10 text-2xl text-white">
               <a href="">
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
@@ -160,7 +157,7 @@
     <!-- header end -->
 
     <!-- Legacy of Success start -->
-    <section class="py-10 lg:py-36">
+    <section class="pt-10 lg:pt-36">
       <div class="lg:flex lg:gap-5">
         <div class="basis-[100%] flex items-center">
           <img src="/img/section-img-1.png" alt="" />
@@ -188,7 +185,7 @@
 
     <!-- cta banner image start -->
 
-    <section>
+    <section class="pt-36">
       <div class="bg-gray-100">
         <img src="/img/cta-banner.jpg" alt="" />
       </div>
@@ -199,7 +196,7 @@
     <!-- Finding Your Ideal Property start -->
 
     <section>
-      <div class="lg:flex py-36">
+      <div class="lg:flex pt-36">
         <div class="basis-[100%]">
           <div class="">
             <h1 class="text-4xl text-left font-bold pl-5 lg:pl-20">
@@ -261,7 +258,7 @@
 
     <!-- The Pillars of Trust start -->
 
-    <section>
+    <section class="pt-36">
       <div class="lg:flex">
         <div class="basis-[60%] px-5 lg:p-20">
           <div>
@@ -398,7 +395,7 @@
 
     <!-- footer start -->
 
-    <section class="mt-20">
+    <section>
       <div class="md:flex bg-[#212121]">
         <div
           class="basis-[100%] md:flex items-center justify-center p-5 md:p-20 gap-10 md:pr-56"
@@ -413,13 +410,17 @@
             </p>
           </div>
         </div>
-        <div class="basis-[100%]"></div>
+        <div class="basis-[100%]">
+          <!-- <img src="/img/grid-img-2.png" alt="" /> -->
+        </div>
       </div>
       <div class="md:flex p-5 md:p-10 bg-[#212121]">
         <div
           class="basis-[100%] pr-0 md:pr-64 flex items-center justify-start md:justify-center"
         >
-          <p class="text-white">Comapany Name 2024. All rights reserved</p>
+          <p class="text-white">
+            &copy;Comapany Name 2024. All rights reserved
+          </p>
         </div>
         <div class="basis-[100%] pt-10 lg:pt-0">
           <div class="flex items-center justify-start md:justify-end gap-10">
@@ -440,46 +441,7 @@
     <!-- footer end-->
 
     <!-- javascript start -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.querySelector("[data-collapse-toggle]");
-        const menu = document.getElementById("navbar-dropdown");
-
-        if (menuToggle && menu) {
-          menuToggle.addEventListener("click", function () {
-            const expanded =
-              menuToggle.getAttribute("aria-expanded") === "true";
-            menuToggle.setAttribute("aria-expanded", !expanded);
-            menu.classList.toggle("hidden");
-          });
-        }
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const navbarToggle = document.getElementById("navbar-toggle");
-        const openIcon = document.getElementById("open-icon");
-        const closeIcon = document.getElementById("close-icon");
-        const navbarDropdown = document.getElementById("navbar-dropdown");
-
-        navbarToggle.addEventListener("click", function () {
-          const isOpen = navbarToggle.getAttribute("aria-expanded") === "true";
-          navbarToggle.setAttribute("aria-expanded", !isOpen);
-          openIcon.classList.toggle("hidden");
-          closeIcon.classList.toggle("hidden");
-          navbarDropdown.classList.toggle("hidden");
-        });
-      });
-
-      window.addEventListener("scroll", function () {
-        var navbar = document.querySelector("nav");
-        if (window.scrollY > 0) {
-          navbar.style.backgroundColor = "black";
-        } else {
-          navbar.style.backgroundColor = "transparent";
-        }
-      });
-    </script>
-
+    <script src="/js/script.js"></script>
     <!-- javascript end -->
   </body>
 </html>

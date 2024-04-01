@@ -20,6 +20,6 @@ body {
   background-position: left;
 }
 
-.scrolled {
-  background-color: black;
+.navbar-scroll {
+  background-color: #000;
 }
