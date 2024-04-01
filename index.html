@@ -19,7 +19,7 @@
   <body>
     <!-- header start -->
     <header class="h-screen bg-banner">
-      <nav class="fixed top-0 z-30 w-full" id="navbar">
+      <nav class="fixed top-0 z-30 w-full" id="scroll">
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
@@ -185,8 +185,8 @@
 
     <!-- cta banner image start -->
 
-    <section class="pt-36">
-      <div class="bg-gray-100">
+    <section class="pt-10 md:pt-36">
+      <div class="w-full">
         <img src="/img/cta-banner.jpg" alt="" />
       </div>
     </section>
@@ -196,7 +196,7 @@
     <!-- Finding Your Ideal Property start -->
 
     <section>
-      <div class="lg:flex pt-36">
+      <div class="lg:flex pt-10 md:pt-36">
         <div class="basis-[100%]">
           <div class="">
             <h1 class="text-4xl text-left font-bold pl-5 lg:pl-20">
@@ -205,9 +205,9 @@
             </h1>
             <div class="pt-20 relative">
               <div
-                class="w-[30%] h-[30%] text-right absolute right-0 top-[-0.5px] bg-gray-100 z-10"
+                class="w-[30%] h-[30%] text-right absolute right-0 top-[-0.5px] z-10"
               >
-                <img src="/img/grid-img-1.png" alt="" />
+                <!-- <img src="/img/grid-img-1.png" alt="" /> -->
               </div>
               <img class="w-[90%] z-20 relative" src="/img/img-3.png" alt="" />
             </div>
@@ -258,7 +258,7 @@
 
     <!-- The Pillars of Trust start -->
 
-    <section class="pt-36">
+    <section class="pt-10 md:pt-36">
       <div class="lg:flex">
         <div class="basis-[60%] px-5 lg:p-20">
           <div>
@@ -326,10 +326,13 @@
           </div>
         </div>
       </div>
-      <div class="lg:flex">
-        <div class="basis-[60%] py-28 lg:py-36 px-10 lg:px-0">
-          <div class="lg:px-36">
-            <div class="z-10">
+      <div class="lg:flex relative">
+        <div
+          class="hidden lg:block bg-grid absolute top-0 h-full w-[500px]"
+        ></div>
+        <div class="basis-[60%] py-28 lg:py-36 px-16 md:px-5 lg:px-0 z-30">
+          <div class="md:px-16 lg:px-36">
+            <div>
               <h1 class="text-4xl lg:text-6xl font-bold">Contact Us Today</h1>
               <h2 class="text-xl lg:text-2xl font-light py-3">
                 Begin your journey towards maximizing your real estate
@@ -354,7 +357,7 @@
         <div class="basis-[40%] flex items-center">
           <!-- form start -->
 
-          <form class="w-full px-10">
+          <form class="w-full px-10 md:px-24 lg:px-10">
             <div class="mb-4">
               <input
                 type="text"
@@ -385,7 +388,6 @@
               </button>
             </div>
           </form>
-
           <!-- form end-->
         </div>
       </div>
@@ -395,7 +397,7 @@
 
     <!-- footer start -->
 
-    <section>
+    <section class="pt-10 lg:pt-0">
       <div class="md:flex bg-[#212121]">
         <div
           class="basis-[100%] md:flex items-center justify-center p-5 md:p-20 gap-10 md:pr-56"
@@ -411,6 +413,9 @@
           </div>
         </div>
         <div class="basis-[100%]">
+          <!-- <div
+            class="bg-footer w-[200px] h-[30vh] right-0 bottom-[-100px] absolute"
+          ></div> -->
           <!-- <img src="/img/grid-img-2.png" alt="" /> -->
         </div>
       </div>

@@ -23,3 +23,15 @@ body {
 .navbar-scroll {
   background-color: #000;
 }
+.bg-grid {
+  background-image: url("/img//bg-grid.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-footer {
+  background-image: url("/img//footer-grid.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
