@@ -1,3 +1,59 @@
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreRegular.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreBlack.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreBold.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreBlackItalic.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreBoldItalic.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreLight.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreLightItalic.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreMedium.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreMediumItalic.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreRegularItalic.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreSemibold.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreSemiboldItalic.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreThin.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/CalibreThinItalic.otf");
+}
 html,
 body {
   width: 100%;
@@ -6,6 +62,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: "Calibre", sans-serif;
 }
 
 .bg-banner {
@@ -35,4 +92,28 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  z-index: 1000;
+}
+.background-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }

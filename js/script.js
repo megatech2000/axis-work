@@ -26,15 +26,56 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// window.addEventListener("scroll", function () {
-//   const navbar = document.getElementById("navbar");
-//   if (window.scrollY > 0) {
-//     navbar.classList.add("navbar-scroll");
-//   } else {
-//     navbar.classList.remove("navbar-scroll");
-//   }
-// });
+const popupButton = document.getElementById("popupButton");
+const popupImg = document.getElementById("popupImg");
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("closePopup");
+const backgroundOverlay = document.getElementById("backgroundOverlay");
+
+function togglePopup() {
+  if (popup.style.display === "block") {
+    popup.style.display = "none";
+    backgroundOverlay.style.display = "none";
+  } else {
+    popup.style.display = "block";
+    backgroundOverlay.style.display = "block";
+  }
+}
+
+popupButton.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  togglePopup();
+});
+
+popupImg.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  togglePopup();
+});
+
+closePopup.addEventListener("click", function () {
+  popup.style.display = "none";
+  backgroundOverlay.style.display = "none";
+});
+
+const myForm = document.getElementById("myForm");
+myForm.addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
+window.addEventListener("click", function (event) {
+  if (
+    event.target !== popupButton &&
+    event.target !== popupImg &&
+    event.target !== popup &&
+    event.target !== closePopup
+  ) {
+    popup.style.display = "none";
+    backgroundOverlay.style.display = "none";
+  }
+});
 
 window.addEventListener("scroll", () => {
-  console.log("scrolled!!!");
+  console.log("scrolled!!!!");
 });
