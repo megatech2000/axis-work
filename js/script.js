@@ -79,3 +79,29 @@ window.addEventListener("click", function (event) {
 window.addEventListener("scroll", () => {
   console.log("scrolled!!!!");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+  // Custom navigation button event listeners
+  document
+    .querySelector(".custom-swiper-button-prev")
+    .addEventListener("click", function () {
+      swiper.slidePrev();
+    });
+
+  document
+    .querySelector(".custom-swiper-button-next")
+    .addEventListener("click", function () {
+      swiper.slideNext();
+    });
+});

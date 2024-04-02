@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link
       rel="stylesheet"
@@ -143,58 +143,71 @@
 
       <div>
         <div class="flex flex-col h-screen w-full relative">
-          <swiper-container class="mySwiper" navigation="true">
-            <swiper-slide>
-              <div
-                class="flex w-full bg-banner px-10 md:px-56 items-center h-screen"
-              >
-                <div class="text-2xl text-white hidden md:block"></div>
-                <div>
-                  <h1
-                    class="text-xl md:text-4xl leading-tight text-left text-white font-semibold"
-                  >
-                    Your Partner in <br />
-                    Real Estate Consultation:<br />
-                    <span class="font-bold text-4xl md:text-6xl">
-                      Axis Real Estate</span
+          <!-- swiper  -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="flex w-full bg-banner px-10 md:px-56 items-center h-screen"
+                >
+                  <div class="text-2xl text-white hidden md:block"></div>
+                  <div>
+                    <h1
+                      class="text-4xl leading-tight text-left text-white font-semibold"
                     >
-                  </h1>
+                      Your Partner in <br />
+                      Real Estate Consultation:<br />
+                      <span class="font-bold text-6xl"> Axis Real Estate</span>
+                    </h1>
+                  </div>
                 </div>
               </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div
-                class="flex w-full bg-banner px-10 md:px-56 items-center h-screen"
-              >
-                <div class="text-2xl text-white hidden md:block"></div>
-                <div>
-                  <h1
-                    class="text-4xl leading-tight text-left text-white font-semibold"
-                  >
-                    Your Partner in <br />
-                    Real Estate Consultation:<br />
-                    <span class="font-bold text-6xl"> Axis Real Estate</span>
-                  </h1>
+              <div class="swiper-slide">
+                <div
+                  class="flex w-full bg-banner px-10 md:px-56 items-center h-screen"
+                >
+                  <div class="text-2xl text-white hidden md:block"></div>
+                  <div>
+                    <h1
+                      class="text-4xl leading-tight text-left text-white font-semibold"
+                    >
+                      Your Partner in <br />
+                      Real Estate Consultation:<br />
+                      <span class="font-bold text-6xl"> Axis Real Estate</span>
+                    </h1>
+                  </div>
                 </div>
               </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div
-                class="flex w-full bg-banner px-10 md:px-56 items-center h-screen"
-              >
-                <div class="text-2xl text-white hidden md:block"></div>
-                <div>
-                  <h1
-                    class="text-4xl leading-tight text-left text-white font-semibold"
-                  >
-                    Your Partner in <br />
-                    Real Estate Consultation:<br />
-                    <span class="font-bold text-6xl"> Axis Real Estate</span>
-                  </h1>
+              <div class="swiper-slide">
+                <div
+                  class="flex w-full bg-banner px-10 md:px-56 items-center h-screen"
+                >
+                  <div class="text-2xl text-white hidden md:block"></div>
+                  <div>
+                    <h1
+                      class="text-4xl leading-tight text-left text-white font-semibold"
+                    >
+                      Your Partner in <br />
+                      Real Estate Consultation:<br />
+                      <span class="font-bold text-6xl"> Axis Real Estate</span>
+                    </h1>
+                  </div>
                 </div>
               </div>
-            </swiper-slide>
-          </swiper-container>
+              <!-- Add more slides here -->
+            </div>
+            <!-- If we need pagination -->
+
+            <!-- Custom navigation arrows -->
+            <div class="custom-swiper-button custom-swiper-button-prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="custom-swiper-button custom-swiper-button-next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <!-- swiper  end-->
+
           <div
             class="flex absolute bottom-0 left-[20px] md:left-[150px] z-30 gap-20 md:gap-40 w-[450px] md:w-[400px] mb-10"
           >
@@ -577,8 +590,10 @@
     <!-- footer end-->
 
     <!-- javascript start -->
+
     <script src="/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- javascript end -->
   </body>
 </html>
